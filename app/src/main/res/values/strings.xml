@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PROGRAMACIÓN MULTIMEDIA</string>
+    <string name="titulo_principal">ACTIVIDAD DE PREFERENCIAS</string>
+    <string name="boton_definir">Definir Preferencias</string>
+    <string name="boton_recuperar">Recuperar Preferencias</string>
+    <string name="inicio">INICIO</string>
+    <string name="uno">Preferencias</string>
+    <string name="dos">Mostrar valores</string>
+    <string name="tres">Toast</string>
+    <string name="texto">TextView</string>
+    <string name="botonToast">Mostrar Toast</string>
+
+</resources>
