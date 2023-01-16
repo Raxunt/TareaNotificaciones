@@ -1,6 +1,7 @@
 package com.damdos.tareanotificacionesdanielvivar;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -15,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ActivityDos extends AppCompatActivity {
     Button mostrarToast;
+    Button botonSalir;
     EditText editText;
     SeekBar seekBar;
     @Override
@@ -60,6 +62,14 @@ public class ActivityDos extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(ActivityDos.this, editText.getText().toString(), Toast.LENGTH_LONG).show();
+            }
+        });
+        botonSalir = findViewById(R.id.boton_inicio);
+        botonSalir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent boton = new Intent(ActivityDos.this, MainActivity.class);
+                startActivity(boton);
             }
         });
     }
